@@ -29,8 +29,11 @@ import { AcaAboutModule, DEV_MODE_TOKEN, PACKAGE_JSON } from '@alfresco/aca-cont
 import { environment } from '../environments/environment';
 import packageJson from 'package.json';
 
+import { AuTemplatesModule } from 'au-templates';
+
+
 @NgModule({
-  imports: [AosExtensionModule, AcaAboutModule, AcaFolderRulesModule],
+  imports: [AosExtensionModule, AcaAboutModule, AcaFolderRulesModule, AuTemplatesModule],
   providers: [
     { provide: PACKAGE_JSON, useValue: packageJson },
     { provide: DEV_MODE_TOKEN, useValue: !environment.production }

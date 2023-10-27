@@ -83,6 +83,11 @@
             "glob": "**/*",
             "input": "projects/aca-content/assets",
             "output": "./assets"
+          },
+          {
+            "glob": "au-templates.json",
+            "input": "au-templates/assets",
+            "output": "./assets/plugins"
           }
         ],
         "styles": [

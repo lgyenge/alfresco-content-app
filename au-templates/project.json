@@ -1,0 +1,41 @@
+{
+  "name": "au-templates",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "au-templates/src",
+  "prefix": "lib",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:ng-packagr",
+      "options": {
+        "project": "au-templates/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "au-templates/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "au-templates/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "au-templates/src/test.ts",
+        "tsConfig": "au-templates/tsconfig.spec.json",
+        "karmaConfig": "au-templates/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@angular-eslint/builder:lint",
+      "options": {
+        "lintFilePatterns": [
+          "au-templates/**/*.ts",
+          "au-templates/**/*.html"
+        ]
+      }
+    }
+  }
+}
