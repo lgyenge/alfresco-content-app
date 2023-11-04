@@ -23,7 +23,7 @@
  */
 
 import { NgModule } from '@angular/core';
-import { AuTemplatesComponent } from './au-templates.component';
+//import { AuTemplatesComponent } from './au-templates.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -32,13 +32,15 @@ import { ExtensionService, provideExtensionConfig } from '@alfresco/adf-extensio
 import { CoreModule, MaterialModule, TRANSLATION_PROVIDER } from '@alfresco/adf-core';
 
 import { AuTemplatesService } from './au-templates.service';
+import { AuTemplateItemsComponent } from './au-template-items/au-template-items.component';
+import { AuTemplatesComponent } from './au-templates/au-templates.component';
 
 export function components() {
   return [AuTemplatesComponent];
 }
 
 @NgModule({
-  declarations: [AuTemplatesComponent],
+  declarations: [AuTemplatesComponent, AuTemplateItemsComponent],
   imports: [CoreModule, BrowserModule, FormsModule, MaterialModule],
   providers: [
     {
@@ -53,7 +55,7 @@ export function components() {
     /* provideExtensionConfig(['au-templates.json']) */
     provideExtensionConfig(['../../assets/au-templates.json'])
   ],
-  exports: [AuTemplatesComponent]
+  exports: [AuTemplatesComponent, AuTemplateItemsComponent]
   /* exports: components(), */
   /* declarations: components() */
 })

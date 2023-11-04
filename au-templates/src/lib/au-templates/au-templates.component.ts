@@ -22,14 +22,17 @@
  * from Hyland Software. If not, see <http://www.gnu.org/licenses/>.
  */
 
-/*
- * Public API Surface of au-templates
- */
+import { Component
+  // OnInit
+} from '@angular/core';
 
-export * from './lib/au-templates.service';
-export * from './lib/au-templates.component';
-export * from './lib/au-templates.module';
+@Component({
+  selector: 'lib-au-templates',
+  templateUrl: './au-templates.component.html',
+  styleUrls: ['./au-templates.component.css']
+})
+export class AuTemplatesComponent {
+  constructor() {}
 
-export * from './lib/au-template-items/au-template-items.component';
-
-// export * from './lib/au-templates/au-templates.component';
+ // ngOnInit(): void {}
+}
