@@ -22,17 +22,9 @@
  * from Hyland Software. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { Component
-  // OnInit
-} from '@angular/core';
-
-@Component({
-  selector: 'lib-au-templates',
-  templateUrl: './au-templates.component.html',
-  styleUrls: ['./au-templates.component.css']
-})
-export class AuTemplatesComponent {
-  constructor() {}
-
- // ngOnInit(): void {}
+export interface Attendee {
+  id?: number;
+  name: string;
+  guests: number;
+  attending: boolean;
 }

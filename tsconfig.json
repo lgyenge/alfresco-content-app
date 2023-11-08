@@ -12,7 +12,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "target": "es2020",
@@ -32,7 +32,7 @@
       "@alfresco/aca-shared/store": ["projects/aca-shared/store/src/public-api.ts"],
       "@alfresco/aca-testing-shared": ["projects/aca-testing-shared/src/index.ts"],
       "@alfresco/playwright-shared": ["projects/aca-playwright-shared/src/index.ts"],
-      "au-templates": ["au-templates"],
+      "au-templates": ["au-templates/src/public-api.ts"],
       "package.json": ["package.json"]
     }
   },

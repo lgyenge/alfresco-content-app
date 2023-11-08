@@ -22,15 +22,23 @@
  * from Hyland Software. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { Component, OnInit } from '@angular/core';
+import { InMemoryDbService } from 'angular-in-memory-web-api';
 
-@Component({
-  selector: 'lib-au-templates22',
-  template: ` <p>au-templates works22!</p> `,
-  styles: []
-})
-export class AuTemplatesComponent implements OnInit {
-  constructor() {}
+import { Attendee } from './model';
 
-  ngOnInit(): void {}
+/* export class AuDb {
+} */
+
+export class InMemoryDataService implements InMemoryDbService {
+  createDb() {
+    const attendees = [
+      {
+        id: 1,
+        name: 'Duncan In Memory',
+        attending: true,
+        guests: 0
+      }
+    ] as Attendee[];
+    return { attendees };
+  }
 }

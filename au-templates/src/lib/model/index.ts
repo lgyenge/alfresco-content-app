@@ -22,14 +22,4 @@
  * from Hyland Software. If not, see <http://www.gnu.org/licenses/>.
  */
 
-/*
- * Public API Surface of au-templates
- */
-
-export * from './lib/services/au-templates.service';
-// export * from './lib/au-templates.component';
-export * from './lib/au-templates.module';
-
-export * from './lib/components/au-template-items/au-template-items.component';
-
-export * from './lib/components/au-templates/au-templates.component';
+export * from './attendee';

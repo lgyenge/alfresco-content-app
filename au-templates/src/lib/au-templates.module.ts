@@ -23,25 +23,72 @@
  */
 
 import { NgModule } from '@angular/core';
-//import { AuTemplatesComponent } from './au-templates.component';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { ExtensionService, provideExtensionConfig } from '@alfresco/adf-extensions';
-import { CoreModule, MaterialModule, TRANSLATION_PROVIDER } from '@alfresco/adf-core';
-
-import { AuTemplatesService } from './au-templates.service';
-import { AuTemplateItemsComponent } from './au-template-items/au-template-items.component';
-import { AuTemplatesComponent } from './au-templates/au-templates.component';
+import { CoreModule, MaterialModule, TRANSLATION_PROVIDER, AuthGuardEcm, SidenavLayoutComponent } from '@alfresco/adf-core';
+import { AuTemplatesService } from './services/au-templates.service';
+import { AuTemplateItemsComponent } from './components/au-template-items/au-template-items.component';
+import { AuTemplatesComponent } from './components/au-templates/au-templates.component';
+import { ShellLayoutComponent } from '@alfresco/adf-core/shell';
+import { InMemoryDataService } from './au.db';
 
 export function components() {
   return [AuTemplatesComponent];
 }
 
+export const AU_TEMPLATES_ROUTES: Routes = [
+  {
+    path: 'templates',
+    component: ShellLayoutComponent,
+    canActivate: [AuthGuardEcm],
+    children: [
+      {
+        path: '',
+        component: AuTemplatesComponent,
+        data: {
+          title: 'Ügyfelek',
+          icon: 'folder',
+          defaultNodeId: '-my-'
+        }
+      }
+    ],
+    canActivateChild: [AuthGuardEcm]
+  },
+  {
+    path: 'templates/:folderId',
+    component: ShellLayoutComponent,
+    canActivate: [AuthGuardEcm],
+    children: [
+      {
+        path: '',
+        component: AuTemplateItemsComponent,
+        data: {
+          title: 'Ügyfél',
+          icon: 'folder',
+          defaultNodeId: '-my-'
+        }
+      }
+    ],
+    canActivateChild: [AuthGuardEcm]
+  }
+];
+
 @NgModule({
-  declarations: [AuTemplatesComponent, AuTemplateItemsComponent],
-  imports: [CoreModule, BrowserModule, FormsModule, MaterialModule],
+  declarations: [AuTemplateItemsComponent],
+  imports: [
+    CoreModule,
+    BrowserModule,
+    FormsModule,
+    MaterialModule,
+    RouterModule.forChild(AU_TEMPLATES_ROUTES),
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 100 })
+  ],
   providers: [
     {
       provide: TRANSLATION_PROVIDER,
@@ -55,14 +102,16 @@ export function components() {
     /* provideExtensionConfig(['au-templates.json']) */
     provideExtensionConfig(['../../assets/au-templates.json'])
   ],
-  exports: [AuTemplatesComponent, AuTemplateItemsComponent]
+  exports: [AuTemplateItemsComponent]
   /* exports: components(), */
   /* declarations: components() */
 })
 export class AuTemplatesModule {
   constructor(extensions: ExtensionService) {
     extensions.setComponents({
-      'au-templates.main.component': AuTemplatesComponent
+      'au-templates.main.component': AuTemplatesComponent,
+      'au-templates.main': ShellLayoutComponent,
+      'au-templates.sidenav': SidenavLayoutComponent
     });
   }
 }
