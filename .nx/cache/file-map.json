@@ -288,27 +288,11 @@
       },
       {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "9850604109768900586"
+        "hash": "8916781725616130979"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "9064900238966012929"
-      },
-      {
-        "file": ".nx/cache/file-map.json",
-        "hash": "209779337739835309"
-      },
-      {
-        "file": ".nx/cache/lockfile.hash",
-        "hash": "3084703389103917147"
-      },
-      {
-        "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "8560103535677534523"
-      },
-      {
-        "file": ".nx/cache/project-graph.json",
-        "hash": "6423012732617518596"
+        "hash": "12758947037079431336"
       },
       {
         "file": ".prettierignore",
@@ -1293,9 +1277,72 @@
       {
         "file": "tsconfig.json",
         "hash": "6201203264887150774"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "8370238211682568077"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "12041305418475753092"
       }
     ],
     "projectFileMap": {
+      "actions-e2e": [
+        {
+          "file": "e2e/playwright/actions/.eslintrc.json",
+          "hash": "11808322772340410048"
+        },
+        {
+          "file": "e2e/playwright/actions/exclude.tests.json",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "e2e/playwright/actions/playwright.config.ts",
+          "hash": "4879190606483817533",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/actions/project.json",
+          "hash": "3441806365267703418"
+        },
+        {
+          "file": "e2e/playwright/actions/src/tests/create-folder-from-template.spec.ts",
+          "hash": "1746255674979623057",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/actions/src/tests/create-folder.spec.ts",
+          "hash": "15472735567055761789",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/actions/src/tests/create-library.spec.ts",
+          "hash": "6674481662128076646",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "e2e/playwright/actions/tsconfig.e2e.adf.json",
+          "hash": "10589734020479010188"
+        },
+        {
+          "file": "e2e/playwright/actions/tsconfig.e2e.json",
+          "hash": "15352681296931127379"
+        }
+      ],
       "aca-content": [
         {
           "file": "projects/aca-content/.eslintrc.js",
@@ -4273,6 +4320,701 @@
           ]
         }
       ],
+      "content-ce": [
+        {
+          "file": "app/.browserslistrc",
+          "hash": "11499074320440298031"
+        },
+        {
+          "file": "app/.eslintrc.json",
+          "hash": "9397969166788119754"
+        },
+        {
+          "file": "app/karma.conf.js",
+          "hash": "12212748751505206212",
+          "deps": [
+            "npm:path",
+            "npm:../karma.conf"
+          ]
+        },
+        {
+          "file": "app/project.json",
+          "hash": "4683187276308514588"
+        },
+        {
+          "file": "app/proxy.conf.js",
+          "hash": "12914198683681486118",
+          "deps": [
+            "npm:@alfresco/adf-cli"
+          ]
+        },
+        {
+          "file": "app/src/app/app.component.html",
+          "hash": "15916440387438600719"
+        },
+        {
+          "file": "app/src/app/app.component.scss",
+          "hash": "2416529261476179771"
+        },
+        {
+          "file": "app/src/app/app.components.spec.ts",
+          "hash": "9426569178505683579"
+        },
+        {
+          "file": "app/src/app/app.components.ts",
+          "hash": "13468163707207602876",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "aca-shared"
+          ]
+        },
+        {
+          "file": "app/src/app/app.module.ts",
+          "hash": "226096781837971989",
+          "deps": [
+            "npm:@angular/platform-browser",
+            "npm:@angular/core",
+            "npm:@alfresco/adf-core",
+            "aca-shared",
+            "npm:@angular/common",
+            "npm:@ngx-translate/core",
+            "npm:@angular/router",
+            "aca-content",
+            "npm:@alfresco/adf-content-services",
+            "npm:@ngrx/store-devtools",
+            "npm:@angular/material"
+          ]
+        },
+        {
+          "file": "app/src/app/app.routes.ts",
+          "hash": "14440451951560924752",
+          "deps": [
+            "npm:@alfresco/adf-core"
+          ]
+        },
+        {
+          "file": "app/src/app/components/login/login.component.html",
+          "hash": "17237110197118861190"
+        },
+        {
+          "file": "app/src/app/components/login/login.component.ts",
+          "hash": "16581672819331950523",
+          "deps": [
+            "npm:@alfresco/adf-core",
+            "npm:@angular/core",
+            "npm:@ngx-translate/core"
+          ]
+        },
+        {
+          "file": "app/src/app/extensions.module.ts",
+          "hash": "13770227743705077010",
+          "deps": [
+            "npm:@angular/core",
+            "aca-content",
+            "npm:package.json",
+            "npm:au-templates"
+          ]
+        },
+        {
+          "file": "app/src/app.config.json",
+          "hash": "14952441921018342757"
+        },
+        {
+          "file": "app/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "app/src/assets/favicon-96x96.png",
+          "hash": "9340191712069756176"
+        },
+        {
+          "file": "app/src/assets/images/alfresco-logo-flower.svg",
+          "hash": "15523496312118092099"
+        },
+        {
+          "file": "app/src/assets/images/alfresco-logo-white.svg",
+          "hash": "7320932505470872092"
+        },
+        {
+          "file": "app/src/assets/images/alfresco-logo.svg",
+          "hash": "3139859460334343612"
+        },
+        {
+          "file": "app/src/assets/images/app-logo.svg",
+          "hash": "2127627882256189423"
+        },
+        {
+          "file": "app/src/assets/plugins/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "app/src/environments/environment.e2e.ts",
+          "hash": "2207116923690785802"
+        },
+        {
+          "file": "app/src/environments/environment.interface.ts",
+          "hash": "13605833430592648774"
+        },
+        {
+          "file": "app/src/environments/environment.prod.ts",
+          "hash": "18041724869952472288"
+        },
+        {
+          "file": "app/src/environments/environment.release.ts",
+          "hash": "9274895915603400827"
+        },
+        {
+          "file": "app/src/environments/environment.ts",
+          "hash": "5640995970984540255"
+        },
+        {
+          "file": "app/src/favicon-96x96.png",
+          "hash": "9340191712069756176"
+        },
+        {
+          "file": "app/src/index.html",
+          "hash": "5056936720653835781"
+        },
+        {
+          "file": "app/src/main.ts",
+          "hash": "14035610922374724861",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "app/src/polyfills.ts",
+          "hash": "16097558774272557754",
+          "deps": [
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "app/src/styles.scss",
+          "hash": "14802001899081958945"
+        },
+        {
+          "file": "app/src/test.ts",
+          "hash": "13925502828392714633",
+          "deps": [
+            "npm:zone.js",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "app/src/typings.d.ts",
+          "hash": "16223122910104980684"
+        },
+        {
+          "file": "app/tsconfig.app.adf.json",
+          "hash": "14629592702242170284"
+        },
+        {
+          "file": "app/tsconfig.app.json",
+          "hash": "13461090314366204377"
+        },
+        {
+          "file": "app/tsconfig.spec.adf.json",
+          "hash": "13697396657444399758"
+        },
+        {
+          "file": "app/tsconfig.spec.json",
+          "hash": "9540331644422133956"
+        }
+      ],
+      "aca-testing-shared": [
+        {
+          "file": "projects/aca-testing-shared/package.json",
+          "hash": "10691564438591177300",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/project.json",
+          "hash": "8463940793419948097"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/breadcrumb/breadcrumb.ts",
+          "hash": "4006609811795707674"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/breadcrumb/dropdown-breadcrumb.ts",
+          "hash": "582645063396677455",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/component.ts",
+          "hash": "17871733719781731518",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/components.ts",
+          "hash": "12468888045138737912"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/data-table/data-table.ts",
+          "hash": "8843222130568019972",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/datetime-picker/datetime-picker.ts",
+          "hash": "9445934980992473387",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/confirm-dialog.ts",
+          "hash": "4723483502178056705",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/content-node-selector-dialog.ts",
+          "hash": "9049499453895871842",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/create-edit-folder-dialog.ts",
+          "hash": "16978805937326244220",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/create-from-template-dialog.ts",
+          "hash": "15974812622246081053",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/create-library-dialog.ts",
+          "hash": "4543767603950205690",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/generic-dialog.ts",
+          "hash": "1077991288269364636",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/index.ts",
+          "hash": "16413764179238845115"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/manage-versions-dialog.ts",
+          "hash": "16991906087591419398",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/password-dialog.ts",
+          "hash": "5100048414020711278",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/select-template-dialog.ts",
+          "hash": "15297309323538561105",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/share-dialog.ts",
+          "hash": "7970621938482676107",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/upload-files-dialog.ts",
+          "hash": "1552816482988492299",
+          "deps": [
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/dialog/upload-new-version-dialog.ts",
+          "hash": "15498381756339681630",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/header/header.ts",
+          "hash": "3904595317363908980",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/index.ts",
+          "hash": "8642719546574540586"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/info-drawer/index.ts",
+          "hash": "7140882386655758914"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/info-drawer/info-drawer-comments-tab.ts",
+          "hash": "7149043729108234180",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/info-drawer/info-drawer-metadata-content.ts",
+          "hash": "7507549817609163699",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/info-drawer/info-drawer-metadata-library.ts",
+          "hash": "16470967748335601450",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/info-drawer/info-drawer.ts",
+          "hash": "3081415065957790992",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/login/login.ts",
+          "hash": "7786773716744799604"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/menu/menu.ts",
+          "hash": "17508534425920204562",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/metadata-card/metadata-card.ts",
+          "hash": "3214237943976098736"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/pageLayoutHeader/pageLayoutHeader.ts",
+          "hash": "5781012600594093573"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/pagination/pagination.ts",
+          "hash": "845599858703426999",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/filters/autocomplete-chips-filter.ts",
+          "hash": "3557604241547384583",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/filters/created-date-filter.ts",
+          "hash": "15145434994992420308",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/filters/facet-filter.ts",
+          "hash": "8419621357286291611",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/filters/facet-tabbed-filter.ts",
+          "hash": "15841087110260828346",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/filters/generic-filter.ts",
+          "hash": "4926554828391505104",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/filters/properties-filter.ts",
+          "hash": "6221712134967953985",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/index.ts",
+          "hash": "182097727901522243"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/search-filters.ts",
+          "hash": "17479329337527872422",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/search-input.ts",
+          "hash": "3837410178901832714",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/search/search-sorting-picker.ts",
+          "hash": "7065363789105248737",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/sidenav/sidenav.ts",
+          "hash": "11008976554243324880",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/toolbar/toolbar.ts",
+          "hash": "16496383392704805895",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/components/viewer/viewer.ts",
+          "hash": "7410577519761740623",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/configs.ts",
+          "hash": "3110882378619335667"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/index.ts",
+          "hash": "14424270261920050267"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/pages/browsing-page.ts",
+          "hash": "4274716502319797501"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/pages/index.ts",
+          "hash": "10249166666999963381"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/pages/login-page.ts",
+          "hash": "4633415336966199128",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/pages/page.ts",
+          "hash": "16240621700174050649",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/pages/search-results-page.ts",
+          "hash": "7657507973731127516",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/admin-actions.ts",
+          "hash": "4038259982767596265",
+          "deps": [
+            "npm:@alfresco/js-api",
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/browser-utils.ts",
+          "hash": "4351027979216707728",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/index.ts",
+          "hash": "15986993237881225496"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/favorites/favorites-api.ts",
+          "hash": "8011738299164262819",
+          "deps": [
+            "npm:@alfresco/adf-testing",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/index.ts",
+          "hash": "7888901571345911674"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/nodes/node-content-tree.ts",
+          "hash": "14687082552257126945"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/nodes/nodes-api.ts",
+          "hash": "8884381961803985673",
+          "deps": [
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/people/people-api-models.ts",
+          "hash": "17471870062211292573"
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/queries/queries-api.ts",
+          "hash": "7168046538305216422",
+          "deps": [
+            "npm:@alfresco/adf-testing",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/repo-api.ts",
+          "hash": "4435551564845660550",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/js-api",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/search/search-api.ts",
+          "hash": "1494774667758875708",
+          "deps": [
+            "npm:@alfresco/adf-testing",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/shared-links/shared-links-api.ts",
+          "hash": "1563968452312266589",
+          "deps": [
+            "npm:@alfresco/adf-testing",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/sites/sites-api.ts",
+          "hash": "9057915716191347476",
+          "deps": [
+            "npm:@alfresco/adf-testing",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/upload/upload-api.ts",
+          "hash": "1321284558831367751",
+          "deps": [
+            "npm:@alfresco/js-api",
+            "npm:protractor",
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/repo-client/repo-client.ts",
+          "hash": "11594273492315476779",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/user-actions.ts",
+          "hash": "10779154634120590995",
+          "deps": [
+            "npm:@alfresco/adf-testing",
+            "npm:@alfresco/js-api",
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/src/utilities/utils.ts",
+          "hash": "1167001333249334373",
+          "deps": [
+            "npm:protractor",
+            "npm:@alfresco/adf-testing",
+            "npm:path",
+            "npm:fs",
+            "npm:node-stream-zip",
+            "npm:crypto"
+          ]
+        },
+        {
+          "file": "projects/aca-testing-shared/tsconfig.lib.json",
+          "hash": "6229146170228750008"
+        }
+      ],
       "playwright-shared": [
         {
           "file": "projects/aca-playwright-shared/package.json",
@@ -4791,6 +5533,882 @@
         {
           "file": "projects/aca-playwright-shared/tsconfig.lib.json",
           "hash": "7707724628832544920"
+        }
+      ],
+      "app-e2e": [
+        {
+          "file": "e2e/protractor/.eslintrc.json",
+          "hash": "11044967094741857940"
+        },
+        {
+          "file": "e2e/protractor/e2e-config/utils/build-number.js",
+          "hash": "14400256484309420528"
+        },
+        {
+          "file": "e2e/protractor/e2e-config/utils/upload-output.js",
+          "hash": "5056506699266709031",
+          "deps": [
+            "npm:node:path",
+            "npm:node:fs",
+            "npm:node:child_process",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "e2e/protractor/project.json",
+          "hash": "3916250997668721935"
+        },
+        {
+          "file": "e2e/protractor/protractor.excludes.json",
+          "hash": "6292486735146968939"
+        },
+        {
+          "file": "e2e/protractor/resources/extensibility-configs/context-submenus-ext.json",
+          "hash": "370336055104627091"
+        },
+        {
+          "file": "e2e/protractor/resources/extensibility-configs/document-presets-ext.json",
+          "hash": "17649840100173423827"
+        },
+        {
+          "file": "e2e/protractor/resources/extensibility-configs/header-ext.json",
+          "hash": "5840550394023044244"
+        },
+        {
+          "file": "e2e/protractor/resources/extensibility-configs/info-drawer-ext.json",
+          "hash": "10056171539625884114"
+        },
+        {
+          "file": "e2e/protractor/resources/extensibility-configs/info-drawer-no-tabs-ext.json",
+          "hash": "7017973988179088038"
+        },
+        {
+          "file": "e2e/protractor/resources/extensibility-configs/metadata-ext.json",
+          "hash": "10824183797290209703"
+        },
+        {
+          "file": "e2e/protractor/resources/extensibility-configs/viewer-ext.json",
+          "hash": "14555326969843901124"
+        },
+        {
+          "file": "e2e/protractor/resources/test-files/file-docx.docx",
+          "hash": "6124824241884490023"
+        },
+        {
+          "file": "e2e/protractor/resources/test-files/file-jpg.jpg",
+          "hash": "9062083763837369118"
+        },
+        {
+          "file": "e2e/protractor/resources/test-files/file-pdf.pdf",
+          "hash": "17490497602336481750"
+        },
+        {
+          "file": "e2e/protractor/resources/test-files/file-xlsx.xlsx",
+          "hash": "4986774618050166615"
+        },
+        {
+          "file": "e2e/protractor/resources/test-files/file2-docx.docx",
+          "hash": "4040347270130105706"
+        },
+        {
+          "file": "e2e/protractor/resources/test-files/file2-xlsx.xlsx",
+          "hash": "4986774618050166615"
+        },
+        {
+          "file": "e2e/protractor/resources/test-files/file_unsupported.3DS",
+          "hash": "6243544238820232042"
+        },
+        {
+          "file": "e2e/protractor/resources/test-files/protected.pdf",
+          "hash": "4045485632506088103"
+        },
+        {
+          "file": "e2e/protractor/smartrunner-factory.js",
+          "hash": "4018776932987997190",
+          "deps": [
+            "npm:protractor-smartrunner",
+            "npm:path"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/copy-move/copy.test.ts",
+          "hash": "3672996686977403649",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/copy-move/destination-picker-dialog.test.ts",
+          "hash": "8412393802843922574",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/copy-move/move.test.ts",
+          "hash": "3413246039692118739",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/create/create-file-from-template.test.ts",
+          "hash": "14021171431602379286",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/create/create-folder-from-template.test.ts",
+          "hash": "10472148204377664701",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/create/create-folder.test.ts",
+          "hash": "9312791776179629821",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/delete/delete-undo-delete.test.ts",
+          "hash": "8055195458078241467",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/delete/permanently-delete.test.ts",
+          "hash": "7592779893593685254",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/delete/restore.test.ts",
+          "hash": "11784041821828879973",
+          "deps": [
+            "npm:protractor",
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/edit/edit-folder.test.ts",
+          "hash": "4234928794321559938",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/edit/edit-offline.test.ts",
+          "hash": "9982988525627091123",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/favorite/mark-favorite.test.ts",
+          "hash": "13555448126925320806",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/library/library-actions.test.ts",
+          "hash": "8527457970048453398",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/share/share-file.test.ts",
+          "hash": "13944052994665831569",
+          "deps": [
+            "npm:protractor",
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/share/unshare-file-search-results.test.ts",
+          "hash": "8236524517370110405",
+          "deps": [
+            "npm:protractor",
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/upload-download/download.test.ts",
+          "hash": "7006915162474954218",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/upload-download/upload-file.test.ts",
+          "hash": "1222406543089131700",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/upload-download/upload-new-version.test.ts",
+          "hash": "2969983049056113388",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions/upload-download/version-actions.test.ts",
+          "hash": "9219277050771473667",
+          "deps": [
+            "aca-testing-shared",
+            "npm:protractor",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/files-folders/folders-actions.test.ts",
+          "hash": "6674935814687778116",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/files-folders/generic.test.ts",
+          "hash": "8893108435100470251",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/files-folders/locked-files-actions.test.ts",
+          "hash": "4098889571703021839",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/files-folders/multiple-files-actions.test.ts",
+          "hash": "4840935842798828247",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/files-folders/office-files-actions.test.ts",
+          "hash": "16843127070545874994",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/files-folders/single-file-actions.test.ts",
+          "hash": "16730778155187509168",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/files-folders/test-data.ts",
+          "hash": "3875042634151013292",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/files-folders/trash.test.ts",
+          "hash": "5453694764110500489",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/libraries/library-trash.test.ts",
+          "hash": "11072714968960657522",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/libraries/library.test.ts",
+          "hash": "9677635603275462009",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/libraries/test-data-libraries.ts",
+          "hash": "8883518626817948795",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/new-menu/new-menu.test.ts",
+          "hash": "12318684636213989563",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/special-permissions/favorites.ts",
+          "hash": "12888158441827300813",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/special-permissions/my-libraries.ts",
+          "hash": "2758203816348531380",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/special-permissions/other-permissions.ts",
+          "hash": "2682719332801437315",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/special-permissions/search-results.ts",
+          "hash": "4452963209926079041",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/special-permissions/shared-files.ts",
+          "hash": "11454498494487153670",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/special-permissions/special-permissions-actions.test.ts",
+          "hash": "8602585053701767828",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/special-permissions/test-data-permissions.ts",
+          "hash": "748040335508462225",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/special-permissions/viewer.ts",
+          "hash": "9994578195580300321",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/actions-available/test-util.ts",
+          "hash": "17113333991113001335",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/extensions/ext-context-submenus.test.ts",
+          "hash": "4952329158349367734",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/extensions/ext-document-list.test.ts",
+          "hash": "3606671031404644666",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/extensions/ext-header.test.ts",
+          "hash": "5777412457418893217",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/extensions/ext-info-drawer.test.ts",
+          "hash": "11776049663559753811",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/extensions/ext-metadata.test.ts",
+          "hash": "1679050662319415124",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/extensions/ext-viewer.test.ts",
+          "hash": "9759341030824229555",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/info-drawer/comments.test.ts",
+          "hash": "14371272803948103314",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/info-drawer/file-folder-properties.test.ts",
+          "hash": "3563490976822966591",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/info-drawer/file-preview.test.ts",
+          "hash": "6785330549843709595",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/info-drawer/general.test.ts",
+          "hash": "6520322722694604783",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/info-drawer/library-properties.test.ts",
+          "hash": "7020132509282569337",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/empty-list.test.ts",
+          "hash": "15192151510861616213",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/favorites.test.ts",
+          "hash": "15551959717777163705",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/file-libraries.test.ts",
+          "hash": "5617427704562129300",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/generic-errors.test.ts",
+          "hash": "10861885149180065702",
+          "deps": [
+            "npm:protractor",
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/permissions.test.ts",
+          "hash": "2058455650957016394",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/personal-files.test.ts",
+          "hash": "8113980452851090811",
+          "deps": [
+            "npm:protractor",
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/recent-files.test.ts",
+          "hash": "1467120163453742594",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/shared-files.test.ts",
+          "hash": "14457743887422468134",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/sort-list.test.ts",
+          "hash": "10216363241880702160",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/tooltips.test.ts",
+          "hash": "14998517706571858742",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/list-views/trash.test.ts",
+          "hash": "14255662107058808828",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/navigation/single-click.test.ts",
+          "hash": "12393095849371067218",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/favorites.ts",
+          "hash": "6266685492816116202",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/multiple-pages-files.test.ts",
+          "hash": "13547386420889129343",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/multiple-pages-libraries.test.ts",
+          "hash": "18367320310261725839",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/multiple-pages-trash.test.ts",
+          "hash": "17971696037185344280",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/personal-files.ts",
+          "hash": "5062358258416945967",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/recent-files.ts",
+          "hash": "13792514283416591855",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/search-results.ts",
+          "hash": "14142320799597189614",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/shared-files.ts",
+          "hash": "10396545706473259322",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/pagination/single-page.test.ts",
+          "hash": "233091530195680602",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/search/search-filters.test.ts",
+          "hash": "5848274104129887596",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/search/search-input.test.ts",
+          "hash": "3017357181043587639",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/search/search-results-files-folders.test.ts",
+          "hash": "9583771910481663985",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/search/search-results-general.test.ts",
+          "hash": "2030671588475794728",
+          "deps": [
+            "aca-testing-shared",
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/search/search-results-libraries.test.ts",
+          "hash": "14972403698516908012",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/search/search-sorting.test.ts",
+          "hash": "4232707851420588004",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/viewer/viewer-actions.test.ts",
+          "hash": "2350180655977658969",
+          "deps": [
+            "aca-testing-shared",
+            "npm:@alfresco/adf-testing",
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "e2e/protractor/suites/viewer/viewer-general.test.ts",
+          "hash": "14932381365420329655",
+          "deps": [
+            "aca-testing-shared"
+          ]
+        },
+        {
+          "file": "e2e/protractor/tsconfig.e2e.adf.json",
+          "hash": "6842828179311876474"
+        },
+        {
+          "file": "e2e/protractor/tsconfig.e2e.json",
+          "hash": "7403137087215781188"
+        }
+      ],
+      "navigation-e2e": [
+        {
+          "file": "e2e/playwright/navigation/.eslintrc.json",
+          "hash": "9505832055281067086"
+        },
+        {
+          "file": "e2e/playwright/navigation/exclude.tests.json",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "e2e/playwright/navigation/playwright.config.ts",
+          "hash": "14750427114461316415",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/navigation/project.json",
+          "hash": "15158949694130597924"
+        },
+        {
+          "file": "e2e/playwright/navigation/src/tests/breadcrumb-admin.spec.ts",
+          "hash": "7067809182743844417",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/navigation/src/tests/breadcrumb.spec.ts",
+          "hash": "7172450954073922601",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared",
+            "npm:@alfresco/js-api"
+          ]
+        },
+        {
+          "file": "e2e/playwright/navigation/src/tests/sidebar.spec.ts",
+          "hash": "9174850911623708432",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/navigation/src/tests/single-click.spec.ts",
+          "hash": "3714664836365117771",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/navigation/tsconfig.e2e.adf.json",
+          "hash": "10589734020479010188"
+        },
+        {
+          "file": "e2e/playwright/navigation/tsconfig.e2e.json",
+          "hash": "15352681296931127379"
+        }
+      ],
+      "authentication-e2e": [
+        {
+          "file": "e2e/playwright/authentication/.eslintrc.json",
+          "hash": "9505832055281067086"
+        },
+        {
+          "file": "e2e/playwright/authentication/exclude.tests.json",
+          "hash": "2767394347811804880"
+        },
+        {
+          "file": "e2e/playwright/authentication/playwright.config.ts",
+          "hash": "2760113093289925990",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/authentication/project.json",
+          "hash": "14167158372481957194"
+        },
+        {
+          "file": "e2e/playwright/authentication/src/tests/general.spec.ts",
+          "hash": "3764081467392261647",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/authentication/src/tests/login.spec.ts",
+          "hash": "5738557667802220882",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/authentication/src/tests/logout.spec.ts",
+          "hash": "11858177683271956163",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/authentication/tsconfig.e2e.adf.json",
+          "hash": "10589734020479010188"
+        },
+        {
+          "file": "e2e/playwright/authentication/tsconfig.e2e.json",
+          "hash": "15352681296931127379"
+        }
+      ],
+      "folder-rules-e2e": [
+        {
+          "file": "e2e/playwright/folder-rules/.eslintrc.json",
+          "hash": "7990291142951936339"
+        },
+        {
+          "file": "e2e/playwright/folder-rules/exclude.tests.json",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "e2e/playwright/folder-rules/playwright.config.ts",
+          "hash": "14709391934375124433",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/folder-rules/project.json",
+          "hash": "9315806842214663182"
+        },
+        {
+          "file": "e2e/playwright/folder-rules/src/tests/actions.spec.ts",
+          "hash": "17848992547832125691",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/folder-rules/src/tests/conditions.spec.ts",
+          "hash": "4281279910524467618",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/folder-rules/src/tests/manage-rules.spec.ts",
+          "hash": "4590112986461254343",
+          "deps": [
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/folder-rules/tsconfig.e2e.adf.json",
+          "hash": "10589734020479010188"
+        },
+        {
+          "file": "e2e/playwright/folder-rules/tsconfig.e2e.json",
+          "hash": "15352681296931127379"
         }
       ],
       "aca-shared": [
@@ -5726,915 +7344,68 @@
           "hash": "10560003812506888139"
         }
       ],
-      "app-e2e": [
+      "viewer-e2e": [
         {
-          "file": "e2e/protractor/.eslintrc.json",
-          "hash": "11044967094741857940"
+          "file": "e2e/playwright/viewer/.eslintrc.json",
+          "hash": "16570099538174262700"
         },
         {
-          "file": "e2e/protractor/e2e-config/utils/build-number.js",
-          "hash": "14400256484309420528"
+          "file": "e2e/playwright/viewer/exclude.tests.json",
+          "hash": "8625551463794060263"
         },
         {
-          "file": "e2e/protractor/e2e-config/utils/upload-output.js",
-          "hash": "5056506699266709031",
+          "file": "e2e/playwright/viewer/playwright.config.ts",
+          "hash": "1785314981106655321",
           "deps": [
-            "npm:node:path",
-            "npm:node:fs",
-            "npm:node:child_process",
-            "npm:@alfresco/js-api"
+            "npm:@playwright/test",
+            "playwright-shared"
           ]
         },
         {
-          "file": "e2e/protractor/project.json",
-          "hash": "3916250997668721935"
+          "file": "e2e/playwright/viewer/project.json",
+          "hash": "7345735255561780473"
         },
         {
-          "file": "e2e/protractor/protractor.excludes.json",
-          "hash": "6292486735146968939"
-        },
-        {
-          "file": "e2e/protractor/resources/extensibility-configs/context-submenus-ext.json",
-          "hash": "370336055104627091"
-        },
-        {
-          "file": "e2e/protractor/resources/extensibility-configs/document-presets-ext.json",
-          "hash": "17649840100173423827"
-        },
-        {
-          "file": "e2e/protractor/resources/extensibility-configs/header-ext.json",
-          "hash": "5840550394023044244"
-        },
-        {
-          "file": "e2e/protractor/resources/extensibility-configs/info-drawer-ext.json",
-          "hash": "10056171539625884114"
-        },
-        {
-          "file": "e2e/protractor/resources/extensibility-configs/info-drawer-no-tabs-ext.json",
-          "hash": "7017973988179088038"
-        },
-        {
-          "file": "e2e/protractor/resources/extensibility-configs/metadata-ext.json",
-          "hash": "10824183797290209703"
-        },
-        {
-          "file": "e2e/protractor/resources/extensibility-configs/viewer-ext.json",
-          "hash": "14555326969843901124"
-        },
-        {
-          "file": "e2e/protractor/resources/test-files/file-docx.docx",
-          "hash": "6124824241884490023"
-        },
-        {
-          "file": "e2e/protractor/resources/test-files/file-jpg.jpg",
-          "hash": "9062083763837369118"
-        },
-        {
-          "file": "e2e/protractor/resources/test-files/file-pdf.pdf",
-          "hash": "17490497602336481750"
-        },
-        {
-          "file": "e2e/protractor/resources/test-files/file-xlsx.xlsx",
-          "hash": "4986774618050166615"
-        },
-        {
-          "file": "e2e/protractor/resources/test-files/file2-docx.docx",
-          "hash": "4040347270130105706"
-        },
-        {
-          "file": "e2e/protractor/resources/test-files/file2-xlsx.xlsx",
-          "hash": "4986774618050166615"
-        },
-        {
-          "file": "e2e/protractor/resources/test-files/file_unsupported.3DS",
-          "hash": "6243544238820232042"
-        },
-        {
-          "file": "e2e/protractor/resources/test-files/protected.pdf",
-          "hash": "4045485632506088103"
-        },
-        {
-          "file": "e2e/protractor/smartrunner-factory.js",
-          "hash": "4018776932987997190",
+          "file": "e2e/playwright/viewer/src/tests/viewer-action.spec.ts",
+          "hash": "1457024652785000132",
           "deps": [
-            "npm:protractor-smartrunner",
-            "npm:path"
+            "npm:@playwright/test",
+            "playwright-shared"
           ]
         },
         {
-          "file": "e2e/protractor/suites/actions/copy-move/copy.test.ts",
-          "hash": "3672996686977403649",
+          "file": "e2e/playwright/viewer/src/tests/viewer-protected.spec.ts",
+          "hash": "1997998202239566240",
           "deps": [
-            "aca-testing-shared",
+            "npm:@playwright/test",
+            "playwright-shared"
+          ]
+        },
+        {
+          "file": "e2e/playwright/viewer/src/tests/viewer-useraction.spec.ts",
+          "hash": "10893305952830721741",
+          "deps": [
+            "npm:@playwright/test",
+            "playwright-shared",
+            "npm:@alfresco/js-api",
             "npm:@alfresco/adf-testing"
           ]
         },
         {
-          "file": "e2e/protractor/suites/actions/copy-move/destination-picker-dialog.test.ts",
-          "hash": "8412393802843922574",
+          "file": "e2e/playwright/viewer/src/tests/viewer.spec.ts",
+          "hash": "12772833746734776272",
           "deps": [
-            "aca-testing-shared"
+            "npm:@playwright/test",
+            "playwright-shared"
           ]
         },
         {
-          "file": "e2e/protractor/suites/actions/copy-move/move.test.ts",
-          "hash": "3413246039692118739",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/create/create-file-from-template.test.ts",
-          "hash": "14021171431602379286",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/create/create-folder-from-template.test.ts",
-          "hash": "10472148204377664701",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/create/create-folder.test.ts",
-          "hash": "9312791776179629821",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/delete/delete-undo-delete.test.ts",
-          "hash": "8055195458078241467",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/delete/permanently-delete.test.ts",
-          "hash": "7592779893593685254",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/delete/restore.test.ts",
-          "hash": "11784041821828879973",
-          "deps": [
-            "npm:protractor",
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/edit/edit-folder.test.ts",
-          "hash": "4234928794321559938",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/edit/edit-offline.test.ts",
-          "hash": "9982988525627091123",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/favorite/mark-favorite.test.ts",
-          "hash": "13555448126925320806",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/library/library-actions.test.ts",
-          "hash": "8527457970048453398",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/share/share-file.test.ts",
-          "hash": "13944052994665831569",
-          "deps": [
-            "npm:protractor",
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/share/unshare-file-search-results.test.ts",
-          "hash": "8236524517370110405",
-          "deps": [
-            "npm:protractor",
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/upload-download/download.test.ts",
-          "hash": "7006915162474954218",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/upload-download/upload-file.test.ts",
-          "hash": "1222406543089131700",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/upload-download/upload-new-version.test.ts",
-          "hash": "2969983049056113388",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions/upload-download/version-actions.test.ts",
-          "hash": "9219277050771473667",
-          "deps": [
-            "aca-testing-shared",
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/files-folders/folders-actions.test.ts",
-          "hash": "6674935814687778116",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/files-folders/generic.test.ts",
-          "hash": "8893108435100470251",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/files-folders/locked-files-actions.test.ts",
-          "hash": "4098889571703021839",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/files-folders/multiple-files-actions.test.ts",
-          "hash": "4840935842798828247",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/files-folders/office-files-actions.test.ts",
-          "hash": "16843127070545874994",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/files-folders/single-file-actions.test.ts",
-          "hash": "16730778155187509168",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/files-folders/test-data.ts",
-          "hash": "3875042634151013292",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/files-folders/trash.test.ts",
-          "hash": "5453694764110500489",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/libraries/library-trash.test.ts",
-          "hash": "11072714968960657522",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/libraries/library.test.ts",
-          "hash": "9677635603275462009",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/libraries/test-data-libraries.ts",
-          "hash": "8883518626817948795",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/new-menu/new-menu.test.ts",
-          "hash": "12318684636213989563",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/special-permissions/favorites.ts",
-          "hash": "12888158441827300813",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/special-permissions/my-libraries.ts",
-          "hash": "2758203816348531380",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/special-permissions/other-permissions.ts",
-          "hash": "2682719332801437315",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/special-permissions/search-results.ts",
-          "hash": "4452963209926079041",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/special-permissions/shared-files.ts",
-          "hash": "11454498494487153670",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/special-permissions/special-permissions-actions.test.ts",
-          "hash": "8602585053701767828",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/special-permissions/test-data-permissions.ts",
-          "hash": "748040335508462225",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/special-permissions/viewer.ts",
-          "hash": "9994578195580300321",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/actions-available/test-util.ts",
-          "hash": "17113333991113001335",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/extensions/ext-context-submenus.test.ts",
-          "hash": "4952329158349367734",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/extensions/ext-document-list.test.ts",
-          "hash": "3606671031404644666",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/extensions/ext-header.test.ts",
-          "hash": "5777412457418893217",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/extensions/ext-info-drawer.test.ts",
-          "hash": "11776049663559753811",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/extensions/ext-metadata.test.ts",
-          "hash": "1679050662319415124",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/extensions/ext-viewer.test.ts",
-          "hash": "9759341030824229555",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/info-drawer/comments.test.ts",
-          "hash": "14371272803948103314",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/info-drawer/file-folder-properties.test.ts",
-          "hash": "3563490976822966591",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/info-drawer/file-preview.test.ts",
-          "hash": "6785330549843709595",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/info-drawer/general.test.ts",
-          "hash": "6520322722694604783",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/info-drawer/library-properties.test.ts",
-          "hash": "7020132509282569337",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/empty-list.test.ts",
-          "hash": "15192151510861616213",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/favorites.test.ts",
-          "hash": "15551959717777163705",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/file-libraries.test.ts",
-          "hash": "5617427704562129300",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/generic-errors.test.ts",
-          "hash": "10861885149180065702",
-          "deps": [
-            "npm:protractor",
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/permissions.test.ts",
-          "hash": "2058455650957016394",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/personal-files.test.ts",
-          "hash": "8113980452851090811",
-          "deps": [
-            "npm:protractor",
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/recent-files.test.ts",
-          "hash": "1467120163453742594",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/shared-files.test.ts",
-          "hash": "14457743887422468134",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/sort-list.test.ts",
-          "hash": "10216363241880702160",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/tooltips.test.ts",
-          "hash": "14998517706571858742",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/list-views/trash.test.ts",
-          "hash": "14255662107058808828",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/navigation/single-click.test.ts",
-          "hash": "12393095849371067218",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/favorites.ts",
-          "hash": "6266685492816116202",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/multiple-pages-files.test.ts",
-          "hash": "13547386420889129343",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/multiple-pages-libraries.test.ts",
-          "hash": "18367320310261725839",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/multiple-pages-trash.test.ts",
-          "hash": "17971696037185344280",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/personal-files.ts",
-          "hash": "5062358258416945967",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/recent-files.ts",
-          "hash": "13792514283416591855",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/search-results.ts",
-          "hash": "14142320799597189614",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/shared-files.ts",
-          "hash": "10396545706473259322",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/pagination/single-page.test.ts",
-          "hash": "233091530195680602",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/search/search-filters.test.ts",
-          "hash": "5848274104129887596",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/search/search-input.test.ts",
-          "hash": "3017357181043587639",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/search/search-results-files-folders.test.ts",
-          "hash": "9583771910481663985",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/search/search-results-general.test.ts",
-          "hash": "2030671588475794728",
-          "deps": [
-            "aca-testing-shared",
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/search/search-results-libraries.test.ts",
-          "hash": "14972403698516908012",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/search/search-sorting.test.ts",
-          "hash": "4232707851420588004",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/viewer/viewer-actions.test.ts",
-          "hash": "2350180655977658969",
-          "deps": [
-            "aca-testing-shared",
-            "npm:@alfresco/adf-testing",
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "e2e/protractor/suites/viewer/viewer-general.test.ts",
-          "hash": "14932381365420329655",
-          "deps": [
-            "aca-testing-shared"
-          ]
-        },
-        {
-          "file": "e2e/protractor/tsconfig.e2e.adf.json",
-          "hash": "6842828179311876474"
-        },
-        {
-          "file": "e2e/protractor/tsconfig.e2e.json",
-          "hash": "7403137087215781188"
-        }
-      ],
-      "content-ce": [
-        {
-          "file": "app/.browserslistrc",
-          "hash": "11499074320440298031"
-        },
-        {
-          "file": "app/.eslintrc.json",
-          "hash": "9397969166788119754"
-        },
-        {
-          "file": "app/karma.conf.js",
-          "hash": "12212748751505206212",
-          "deps": [
-            "npm:path",
-            "npm:../karma.conf"
-          ]
-        },
-        {
-          "file": "app/project.json",
-          "hash": "4683187276308514588"
-        },
-        {
-          "file": "app/proxy.conf.js",
-          "hash": "12914198683681486118",
-          "deps": [
-            "npm:@alfresco/adf-cli"
-          ]
-        },
-        {
-          "file": "app/src/app/app.component.html",
-          "hash": "15916440387438600719"
-        },
-        {
-          "file": "app/src/app/app.component.scss",
-          "hash": "2416529261476179771"
-        },
-        {
-          "file": "app/src/app/app.components.spec.ts",
-          "hash": "9426569178505683579"
-        },
-        {
-          "file": "app/src/app/app.components.ts",
-          "hash": "13468163707207602876",
-          "deps": [
-            "npm:@angular/core",
-            "npm:rxjs",
-            "aca-shared"
-          ]
-        },
-        {
-          "file": "app/src/app/app.module.ts",
-          "hash": "226096781837971989",
-          "deps": [
-            "npm:@angular/platform-browser",
-            "npm:@angular/core",
-            "npm:@alfresco/adf-core",
-            "aca-shared",
-            "npm:@angular/common",
-            "npm:@ngx-translate/core",
-            "npm:@angular/router",
-            "aca-content",
-            "npm:@alfresco/adf-content-services",
-            "npm:@ngrx/store-devtools",
-            "npm:@angular/material"
-          ]
-        },
-        {
-          "file": "app/src/app/app.routes.ts",
-          "hash": "14440451951560924752",
-          "deps": [
-            "npm:@alfresco/adf-core"
-          ]
-        },
-        {
-          "file": "app/src/app/components/login/login.component.html",
-          "hash": "17237110197118861190"
-        },
-        {
-          "file": "app/src/app/components/login/login.component.ts",
-          "hash": "16581672819331950523",
-          "deps": [
-            "npm:@alfresco/adf-core",
-            "npm:@angular/core",
-            "npm:@ngx-translate/core"
-          ]
-        },
-        {
-          "file": "app/src/app/extensions.module.ts",
-          "hash": "13770227743705077010",
-          "deps": [
-            "npm:@angular/core",
-            "aca-content",
-            "npm:package.json",
-            "npm:au-templates"
-          ]
-        },
-        {
-          "file": "app/src/app.config.json",
-          "hash": "14952441921018342757"
-        },
-        {
-          "file": "app/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "app/src/assets/favicon-96x96.png",
-          "hash": "9340191712069756176"
-        },
-        {
-          "file": "app/src/assets/images/alfresco-logo-flower.svg",
-          "hash": "15523496312118092099"
-        },
-        {
-          "file": "app/src/assets/images/alfresco-logo-white.svg",
-          "hash": "7320932505470872092"
-        },
-        {
-          "file": "app/src/assets/images/alfresco-logo.svg",
-          "hash": "3139859460334343612"
-        },
-        {
-          "file": "app/src/assets/images/app-logo.svg",
-          "hash": "2127627882256189423"
-        },
-        {
-          "file": "app/src/assets/plugins/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "app/src/environments/environment.e2e.ts",
-          "hash": "2207116923690785802"
-        },
-        {
-          "file": "app/src/environments/environment.interface.ts",
-          "hash": "13605833430592648774"
-        },
-        {
-          "file": "app/src/environments/environment.prod.ts",
-          "hash": "18041724869952472288"
-        },
-        {
-          "file": "app/src/environments/environment.release.ts",
-          "hash": "9274895915603400827"
-        },
-        {
-          "file": "app/src/environments/environment.ts",
-          "hash": "5640995970984540255"
-        },
-        {
-          "file": "app/src/favicon-96x96.png",
-          "hash": "9340191712069756176"
-        },
-        {
-          "file": "app/src/index.html",
-          "hash": "5056936720653835781"
-        },
-        {
-          "file": "app/src/main.ts",
-          "hash": "14035610922374724861",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/platform-browser-dynamic"
-          ]
-        },
-        {
-          "file": "app/src/polyfills.ts",
-          "hash": "16097558774272557754",
-          "deps": [
-            "npm:zone.js"
-          ]
-        },
-        {
-          "file": "app/src/styles.scss",
-          "hash": "14802001899081958945"
-        },
-        {
-          "file": "app/src/test.ts",
-          "hash": "13925502828392714633",
-          "deps": [
-            "npm:zone.js",
-            "npm:@angular/core",
-            "npm:@angular/platform-browser-dynamic"
-          ]
-        },
-        {
-          "file": "app/src/typings.d.ts",
-          "hash": "16223122910104980684"
-        },
-        {
-          "file": "app/tsconfig.app.adf.json",
-          "hash": "14629592702242170284"
-        },
-        {
-          "file": "app/tsconfig.app.json",
-          "hash": "13461090314366204377"
-        },
-        {
-          "file": "app/tsconfig.spec.adf.json",
-          "hash": "13697396657444399758"
+          "file": "e2e/playwright/viewer/tsconfig.e2e.adf.json",
+          "hash": "10589734020479010188"
         },
         {
-          "file": "app/tsconfig.spec.json",
-          "hash": "9540331644422133956"
+          "file": "e2e/playwright/viewer/tsconfig.e2e.json",
+          "hash": "15352681296931127379"
         }
       ],
       "special-permissions-e2e": [
@@ -6680,658 +7451,6 @@
         },
         {
           "file": "e2e/playwright/special-permissions-actions-available/tsconfig.e2e.json",
-          "hash": "15352681296931127379"
-        }
-      ],
-      "actions-e2e": [
-        {
-          "file": "e2e/playwright/actions/.eslintrc.json",
-          "hash": "11808322772340410048"
-        },
-        {
-          "file": "e2e/playwright/actions/exclude.tests.json",
-          "hash": "15753941481085060538"
-        },
-        {
-          "file": "e2e/playwright/actions/playwright.config.ts",
-          "hash": "4879190606483817533",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/actions/project.json",
-          "hash": "3441806365267703418"
-        },
-        {
-          "file": "e2e/playwright/actions/src/tests/create-folder-from-template.spec.ts",
-          "hash": "1746255674979623057",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/actions/src/tests/create-folder.spec.ts",
-          "hash": "15472735567055761789",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/actions/src/tests/create-library.spec.ts",
-          "hash": "6674481662128076646",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared",
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "e2e/playwright/actions/tsconfig.e2e.adf.json",
-          "hash": "10589734020479010188"
-        },
-        {
-          "file": "e2e/playwright/actions/tsconfig.e2e.json",
-          "hash": "15352681296931127379"
-        }
-      ],
-      "folder-rules-e2e": [
-        {
-          "file": "e2e/playwright/folder-rules/.eslintrc.json",
-          "hash": "7990291142951936339"
-        },
-        {
-          "file": "e2e/playwright/folder-rules/exclude.tests.json",
-          "hash": "15753941481085060538"
-        },
-        {
-          "file": "e2e/playwright/folder-rules/playwright.config.ts",
-          "hash": "14709391934375124433",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/folder-rules/project.json",
-          "hash": "9315806842214663182"
-        },
-        {
-          "file": "e2e/playwright/folder-rules/src/tests/actions.spec.ts",
-          "hash": "17848992547832125691",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/folder-rules/src/tests/conditions.spec.ts",
-          "hash": "4281279910524467618",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/folder-rules/src/tests/manage-rules.spec.ts",
-          "hash": "4590112986461254343",
-          "deps": [
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/folder-rules/tsconfig.e2e.adf.json",
-          "hash": "10589734020479010188"
-        },
-        {
-          "file": "e2e/playwright/folder-rules/tsconfig.e2e.json",
-          "hash": "15352681296931127379"
-        }
-      ],
-      "aca-testing-shared": [
-        {
-          "file": "projects/aca-testing-shared/package.json",
-          "hash": "10691564438591177300",
-          "deps": [
-            "npm:tslib"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/project.json",
-          "hash": "8463940793419948097"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/breadcrumb/breadcrumb.ts",
-          "hash": "4006609811795707674"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/breadcrumb/dropdown-breadcrumb.ts",
-          "hash": "582645063396677455",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/component.ts",
-          "hash": "17871733719781731518",
-          "deps": [
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/components.ts",
-          "hash": "12468888045138737912"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/data-table/data-table.ts",
-          "hash": "8843222130568019972",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/datetime-picker/datetime-picker.ts",
-          "hash": "9445934980992473387",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/confirm-dialog.ts",
-          "hash": "4723483502178056705",
-          "deps": [
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/content-node-selector-dialog.ts",
-          "hash": "9049499453895871842",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/create-edit-folder-dialog.ts",
-          "hash": "16978805937326244220",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/create-from-template-dialog.ts",
-          "hash": "15974812622246081053",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/create-library-dialog.ts",
-          "hash": "4543767603950205690",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/generic-dialog.ts",
-          "hash": "1077991288269364636",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/index.ts",
-          "hash": "16413764179238845115"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/manage-versions-dialog.ts",
-          "hash": "16991906087591419398",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/password-dialog.ts",
-          "hash": "5100048414020711278",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/select-template-dialog.ts",
-          "hash": "15297309323538561105",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/share-dialog.ts",
-          "hash": "7970621938482676107",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/upload-files-dialog.ts",
-          "hash": "1552816482988492299",
-          "deps": [
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/dialog/upload-new-version-dialog.ts",
-          "hash": "15498381756339681630",
-          "deps": [
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/header/header.ts",
-          "hash": "3904595317363908980",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/index.ts",
-          "hash": "8642719546574540586"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/info-drawer/index.ts",
-          "hash": "7140882386655758914"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/info-drawer/info-drawer-comments-tab.ts",
-          "hash": "7149043729108234180",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/info-drawer/info-drawer-metadata-content.ts",
-          "hash": "7507549817609163699",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/info-drawer/info-drawer-metadata-library.ts",
-          "hash": "16470967748335601450",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/info-drawer/info-drawer.ts",
-          "hash": "3081415065957790992",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/login/login.ts",
-          "hash": "7786773716744799604"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/menu/menu.ts",
-          "hash": "17508534425920204562",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/metadata-card/metadata-card.ts",
-          "hash": "3214237943976098736"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/pageLayoutHeader/pageLayoutHeader.ts",
-          "hash": "5781012600594093573"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/pagination/pagination.ts",
-          "hash": "845599858703426999",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/filters/autocomplete-chips-filter.ts",
-          "hash": "3557604241547384583",
-          "deps": [
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/filters/created-date-filter.ts",
-          "hash": "15145434994992420308",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/filters/facet-filter.ts",
-          "hash": "8419621357286291611",
-          "deps": [
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/filters/facet-tabbed-filter.ts",
-          "hash": "15841087110260828346",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/filters/generic-filter.ts",
-          "hash": "4926554828391505104",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/filters/properties-filter.ts",
-          "hash": "6221712134967953985",
-          "deps": [
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/index.ts",
-          "hash": "182097727901522243"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/search-filters.ts",
-          "hash": "17479329337527872422",
-          "deps": [
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/search-input.ts",
-          "hash": "3837410178901832714",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/search/search-sorting-picker.ts",
-          "hash": "7065363789105248737",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/sidenav/sidenav.ts",
-          "hash": "11008976554243324880",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/toolbar/toolbar.ts",
-          "hash": "16496383392704805895",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/components/viewer/viewer.ts",
-          "hash": "7410577519761740623",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/configs.ts",
-          "hash": "3110882378619335667"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/index.ts",
-          "hash": "14424270261920050267"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/pages/browsing-page.ts",
-          "hash": "4274716502319797501"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/pages/index.ts",
-          "hash": "10249166666999963381"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/pages/login-page.ts",
-          "hash": "4633415336966199128",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/pages/page.ts",
-          "hash": "16240621700174050649",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/pages/search-results-page.ts",
-          "hash": "7657507973731127516",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/admin-actions.ts",
-          "hash": "4038259982767596265",
-          "deps": [
-            "npm:@alfresco/js-api",
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/browser-utils.ts",
-          "hash": "4351027979216707728",
-          "deps": [
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/index.ts",
-          "hash": "15986993237881225496"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/favorites/favorites-api.ts",
-          "hash": "8011738299164262819",
-          "deps": [
-            "npm:@alfresco/adf-testing",
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/index.ts",
-          "hash": "7888901571345911674"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/nodes/node-content-tree.ts",
-          "hash": "14687082552257126945"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/nodes/nodes-api.ts",
-          "hash": "8884381961803985673",
-          "deps": [
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/people/people-api-models.ts",
-          "hash": "17471870062211292573"
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/queries/queries-api.ts",
-          "hash": "7168046538305216422",
-          "deps": [
-            "npm:@alfresco/adf-testing",
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/repo-api.ts",
-          "hash": "4435551564845660550",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/js-api",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/search/search-api.ts",
-          "hash": "1494774667758875708",
-          "deps": [
-            "npm:@alfresco/adf-testing",
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/shared-links/shared-links-api.ts",
-          "hash": "1563968452312266589",
-          "deps": [
-            "npm:@alfresco/adf-testing",
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/sites/sites-api.ts",
-          "hash": "9057915716191347476",
-          "deps": [
-            "npm:@alfresco/adf-testing",
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/apis/upload/upload-api.ts",
-          "hash": "1321284558831367751",
-          "deps": [
-            "npm:@alfresco/js-api",
-            "npm:protractor",
-            "npm:fs"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/repo-client/repo-client.ts",
-          "hash": "11594273492315476779",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/user-actions.ts",
-          "hash": "10779154634120590995",
-          "deps": [
-            "npm:@alfresco/adf-testing",
-            "npm:@alfresco/js-api",
-            "npm:protractor"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/src/utilities/utils.ts",
-          "hash": "1167001333249334373",
-          "deps": [
-            "npm:protractor",
-            "npm:@alfresco/adf-testing",
-            "npm:path",
-            "npm:fs",
-            "npm:node-stream-zip",
-            "npm:crypto"
-          ]
-        },
-        {
-          "file": "projects/aca-testing-shared/tsconfig.lib.json",
-          "hash": "6229146170228750008"
-        }
-      ],
-      "authentication-e2e": [
-        {
-          "file": "e2e/playwright/authentication/.eslintrc.json",
-          "hash": "9505832055281067086"
-        },
-        {
-          "file": "e2e/playwright/authentication/exclude.tests.json",
-          "hash": "2767394347811804880"
-        },
-        {
-          "file": "e2e/playwright/authentication/playwright.config.ts",
-          "hash": "2760113093289925990",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/authentication/project.json",
-          "hash": "14167158372481957194"
-        },
-        {
-          "file": "e2e/playwright/authentication/src/tests/general.spec.ts",
-          "hash": "3764081467392261647",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/authentication/src/tests/login.spec.ts",
-          "hash": "5738557667802220882",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/authentication/src/tests/logout.spec.ts",
-          "hash": "11858177683271956163",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/authentication/tsconfig.e2e.adf.json",
-          "hash": "10589734020479010188"
-        },
-        {
-          "file": "e2e/playwright/authentication/tsconfig.e2e.json",
           "hash": "15352681296931127379"
         }
       ],
@@ -7396,6 +7515,20 @@
           "hash": "2372370483153292633"
         },
         {
+          "file": "au-templates/src/lib/au-templates.component.spec.ts",
+          "hash": "2231918253642811701",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "au-templates/src/lib/au-templates.component.ts",
+          "hash": "17345557397305862296",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "au-templates/src/lib/au-templates.module.ts",
           "hash": "14780534426753825973",
           "deps": [
@@ -7444,6 +7577,10 @@
           ]
         },
         {
+          "file": "au-templates/src/lib/components/au-templates/au-templates.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
           "file": "au-templates/src/lib/components/au-templates/au-templates.component.html",
           "hash": "7308101843751560763"
         },
@@ -7485,151 +7622,6 @@
         {
           "file": "au-templates/tsconfig.spec.json",
           "hash": "11297499154819548646"
-        },
-        {
-          "file": "au-templates/src/lib/components/au-templates/au-templates.component.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "au-templates/src/lib/au-templates.component.ts",
-          "hash": "17345557397305862296",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "au-templates/src/lib/au-templates.component.spec.ts",
-          "hash": "2231918253642811701",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        }
-      ],
-      "navigation-e2e": [
-        {
-          "file": "e2e/playwright/navigation/.eslintrc.json",
-          "hash": "9505832055281067086"
-        },
-        {
-          "file": "e2e/playwright/navigation/exclude.tests.json",
-          "hash": "15753941481085060538"
-        },
-        {
-          "file": "e2e/playwright/navigation/playwright.config.ts",
-          "hash": "14750427114461316415",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/navigation/project.json",
-          "hash": "15158949694130597924"
-        },
-        {
-          "file": "e2e/playwright/navigation/src/tests/breadcrumb-admin.spec.ts",
-          "hash": "7067809182743844417",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/navigation/src/tests/breadcrumb.spec.ts",
-          "hash": "7172450954073922601",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared",
-            "npm:@alfresco/js-api"
-          ]
-        },
-        {
-          "file": "e2e/playwright/navigation/src/tests/sidebar.spec.ts",
-          "hash": "9174850911623708432",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/navigation/src/tests/single-click.spec.ts",
-          "hash": "3714664836365117771",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/navigation/tsconfig.e2e.adf.json",
-          "hash": "10589734020479010188"
-        },
-        {
-          "file": "e2e/playwright/navigation/tsconfig.e2e.json",
-          "hash": "15352681296931127379"
-        }
-      ],
-      "viewer-e2e": [
-        {
-          "file": "e2e/playwright/viewer/.eslintrc.json",
-          "hash": "16570099538174262700"
-        },
-        {
-          "file": "e2e/playwright/viewer/exclude.tests.json",
-          "hash": "8625551463794060263"
-        },
-        {
-          "file": "e2e/playwright/viewer/playwright.config.ts",
-          "hash": "1785314981106655321",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/viewer/project.json",
-          "hash": "7345735255561780473"
-        },
-        {
-          "file": "e2e/playwright/viewer/src/tests/viewer-action.spec.ts",
-          "hash": "1457024652785000132",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/viewer/src/tests/viewer-protected.spec.ts",
-          "hash": "1997998202239566240",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/viewer/src/tests/viewer-useraction.spec.ts",
-          "hash": "10893305952830721741",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared",
-            "npm:@alfresco/js-api",
-            "npm:@alfresco/adf-testing"
-          ]
-        },
-        {
-          "file": "e2e/playwright/viewer/src/tests/viewer.spec.ts",
-          "hash": "12772833746734776272",
-          "deps": [
-            "npm:@playwright/test",
-            "playwright-shared"
-          ]
-        },
-        {
-          "file": "e2e/playwright/viewer/tsconfig.e2e.adf.json",
-          "hash": "10589734020479010188"
-        },
-        {
-          "file": "e2e/playwright/viewer/tsconfig.e2e.json",
-          "hash": "15352681296931127379"
         }
       ]
     }
