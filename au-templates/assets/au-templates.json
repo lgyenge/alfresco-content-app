@@ -24,7 +24,7 @@
             "id": "au-templates.main",
             "icon": "extension",
             "title": "Au Templates",
-            "route": "au-templates.route"
+            "route": "templates"
         }
       ]
     }
