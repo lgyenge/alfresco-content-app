@@ -28,7 +28,6 @@ import { AosExtensionModule } from '@alfresco/aca-content/ms-office';
 import { AcaAboutModule, DEV_MODE_TOKEN, PACKAGE_JSON } from '@alfresco/aca-content/about';
 import { environment } from '../environments/environment';
 import packageJson from 'package.json';
-// import { AuTemplatesModule } from '../../../au-templates/src/public-api';
 import { AuTemplatesModule } from 'au-templates';
 
 @NgModule({

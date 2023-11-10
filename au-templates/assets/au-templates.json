@@ -18,13 +18,18 @@
   "features": {
     "navbar": [
       {
-        "id": "au-templates.menu",
-        "children": [
+        "id": "au-templates.nav",
+        "items": [
           {
-            "id": "au-templates.main",
-            "icon": "extension",
-            "title": "Au Templates",
-            "route": "au-templates.route"
+            "id": "au-templates.menu",
+            "children": [
+              {
+                "id": "au-templates.main",
+                "icon": "extension",
+                "title": "Au Templates",
+                "route": "templates"
+              }
+            ]
           }
         ]
       }
