@@ -29,7 +29,7 @@ import { AuTemplateItemsComponent } from './components/au-template-items/au-temp
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http';
 // import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { ExtensionService, provideExtensionConfig } from '@alfresco/adf-extensions';
@@ -87,9 +87,9 @@ export const AU_TEMPLATES_ROUTES: Routes = [
     BrowserModule,
     FormsModule,
     MaterialModule,
-    RouterModule.forChild(AU_TEMPLATES_ROUTES),
-    HttpClientModule
-    // HttpClientInMemoryWebApiModule.forFeature(InMemoryDataService, { delay: 100 })
+    RouterModule.forChild(AU_TEMPLATES_ROUTES)
+    // HttpClientModule,
+    // HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 100 })
   ],
   providers: [
     {
