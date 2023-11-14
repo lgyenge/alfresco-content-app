@@ -22,32 +22,8 @@
  * from Hyland Software. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { Injectable } from '@angular/core';
-import { NodesApiService } from '@alfresco/adf-content-services';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class AuTemplatesService {
-  constructor(private nodesApi: NodesApiService) {}
-}
-
-
-/*  this.nodesApi
-      .getNode(this.folderId)
-      .pipe(takeUntil(this.onDestroy$))
-      .subscribe(
-        (node) => {
-          this.isValidPath = true;
-          if (node && node.isFolder) {
-            this.updateCurrentNode(node);
-          }
-        },
-        () => (this.isValidPath = false)
-      );
-
-    this.subscriptions = this.subscriptions.concat([
-      this.breakpointObserver.observe([Breakpoints.HandsetPortrait, Breakpoints.HandsetLandscape]).subscribe((result) => {
-        this.isSmallScreen = result.matches;
-      })
-    ]); */
+import { createAction, props } from '@ngrx/store';
+import { TemplatesEntity } from './templates.models';
+export const initTemplates = createAction('[Templates Page] Init');
+export const loadTemplatesSuccess = createAction('[Templates/API] Load Templates Success', props<{ templates: TemplatesEntity[] }>());
+export const loadTemplatesFailure = createAction('[Templates/API] Load Templates Failure', props<{ error: any }>());

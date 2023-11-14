@@ -22,7 +22,10 @@
  * from Hyland Software. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { Store, select } from '@ngrx/store';
+import { TemplatesState } from './../../+state/templates.reducer';
+import { initTemplates } from './../../+state/templates.actions';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -30,6 +33,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
   template: ` <p>au-templates works!</p> `,
   styles: []
 })
-export class AuTemplatesComponent {
-  constructor() {}
+export class AuTemplatesComponent implements OnInit {
+  constructor(private store: Store<TemplatesState>) {}
+
+  ngOnInit() {
+    this.store.dispatch(initTemplates());
+    // this.products$ = this.store.pipe(select(getProducts));
+  }
 }

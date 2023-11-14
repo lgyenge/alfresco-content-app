@@ -22,32 +22,17 @@
  * from Hyland Software. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { Injectable } from '@angular/core';
-import { NodesApiService } from '@alfresco/adf-content-services';
+/**
+ * Interface for the 'Templates' data
+ */
+import { NodeEntry, Node, PathElement } from '@alfresco/js-api';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class AuTemplatesService {
-  constructor(private nodesApi: NodesApiService) {}
+/* export interface TemplatesEntity {
+  id: string | number; // Primary ID
+  name: string;
+} */
+
+export interface TemplatesEntity /* extends NodeEntry */ {
+  id: string | number; // Primary ID
+  name: string;
 }
-
-
-/*  this.nodesApi
-      .getNode(this.folderId)
-      .pipe(takeUntil(this.onDestroy$))
-      .subscribe(
-        (node) => {
-          this.isValidPath = true;
-          if (node && node.isFolder) {
-            this.updateCurrentNode(node);
-          }
-        },
-        () => (this.isValidPath = false)
-      );
-
-    this.subscriptions = this.subscriptions.concat([
-      this.breakpointObserver.observe([Breakpoints.HandsetPortrait, Breakpoints.HandsetLandscape]).subscribe((result) => {
-        this.isSmallScreen = result.matches;
-      })
-    ]); */

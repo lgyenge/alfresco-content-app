@@ -37,6 +37,10 @@ import { CoreModule, MaterialModule, TRANSLATION_PROVIDER, AuthGuardEcm, Sidenav
 
 import { AuTemplatesService } from './services/au-templates.service';
 import { ShellLayoutComponent } from '@alfresco/adf-core/shell';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import * as fromTemplates from './+state/templates.reducer';
+import { TemplatesEffects } from './+state/templates.effects';
 // import { InMemoryDataService } from './au.db';
 
 export function components() {
@@ -87,7 +91,9 @@ export const AU_TEMPLATES_ROUTES: Routes = [
     BrowserModule,
     FormsModule,
     MaterialModule,
-    RouterModule.forChild(AU_TEMPLATES_ROUTES)
+    RouterModule.forChild(AU_TEMPLATES_ROUTES),
+    StoreModule.forFeature(fromTemplates.TEMPLATES_FEATURE_KEY, fromTemplates.templatesReducer),
+    EffectsModule.forFeature([TemplatesEffects])
     // HttpClientModule,
     // HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 100 })
   ],

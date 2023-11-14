@@ -22,32 +22,34 @@
  * from Hyland Software. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
+import { createEffect, Actions, ofType } from '@ngrx/effects';
+import { of } from 'rxjs';
+import { switchMap, catchError, tap } from 'rxjs/operators';
+import * as TemplatesActions from './templates.actions';
+// import * as TemplatesFeature from './templates.reducer';
 import { NodesApiService } from '@alfresco/adf-content-services';
+// import { NodePaging } from '@alfresco/js-api'
+// import { AbstractControl } from '@angular/forms';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class AuTemplatesService {
-  constructor(private nodesApi: NodesApiService) {}
+
+@Injectable()
+export class TemplatesEffects {
+  private actions$ = inject(Actions);
+  private nodesApi = inject(NodesApiService);
+  init$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(TemplatesActions.initTemplates),
+      // switchMap(() => of(TemplatesActions.loadTemplatesSuccess({ templates: [] }))),
+      switchMap(() =>
+        this.nodesApi.getNodeChildren('-my').pipe(
+          switchMap(() => of(TemplatesActions.loadTemplatesSuccess({ templates: [] }))),
+          catchError((error) => {
+            console.error('Error', error);
+            return of(TemplatesActions.loadTemplatesFailure({ error }));
+          })
+        )
+      )
+    )
+  );
 }
-
-
-/*  this.nodesApi
-      .getNode(this.folderId)
-      .pipe(takeUntil(this.onDestroy$))
-      .subscribe(
-        (node) => {
-          this.isValidPath = true;
-          if (node && node.isFolder) {
-            this.updateCurrentNode(node);
-          }
-        },
-        () => (this.isValidPath = false)
-      );
-
-    this.subscriptions = this.subscriptions.concat([
-      this.breakpointObserver.observe([Breakpoints.HandsetPortrait, Breakpoints.HandsetLandscape]).subscribe((result) => {
-        this.isSmallScreen = result.matches;
-      })
-    ]); */
