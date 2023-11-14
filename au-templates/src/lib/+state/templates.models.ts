@@ -25,14 +25,17 @@
 /**
  * Interface for the 'Templates' data
  */
-import { NodeEntry, Node, PathElement } from '@alfresco/js-api';
+import { Node } from '@alfresco/js-api';
 
 /* export interface TemplatesEntity {
   id: string | number; // Primary ID
   name: string;
 } */
 
-export interface TemplatesEntity /* extends NodeEntry */ {
+/* export interface TemplatesEntity extends NodeEntry  {
   id: string | number; // Primary ID
   name: string;
 }
+ */
+
+export type TemplatesEntity = Node;

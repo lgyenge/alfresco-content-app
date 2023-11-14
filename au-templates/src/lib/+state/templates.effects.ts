@@ -25,13 +25,12 @@
 import { Injectable, inject } from '@angular/core';
 import { createEffect, Actions, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
-import { switchMap, catchError, tap } from 'rxjs/operators';
+import { switchMap, catchError, map, tap } from 'rxjs/operators';
 import * as TemplatesActions from './templates.actions';
 // import * as TemplatesFeature from './templates.reducer';
 import { NodesApiService } from '@alfresco/adf-content-services';
 // import { NodePaging } from '@alfresco/js-api'
 // import { AbstractControl } from '@angular/forms';
-
 
 @Injectable()
 export class TemplatesEffects {
@@ -40,10 +39,12 @@ export class TemplatesEffects {
   init$ = createEffect(() =>
     this.actions$.pipe(
       ofType(TemplatesActions.initTemplates),
-      // switchMap(() => of(TemplatesActions.loadTemplatesSuccess({ templates: [] }))),
       switchMap(() =>
-        this.nodesApi.getNodeChildren('-my').pipe(
-          switchMap(() => of(TemplatesActions.loadTemplatesSuccess({ templates: [] }))),
+        this.nodesApi.getNodeChildren('-my-').pipe(
+          map((nodePaging) => nodePaging.list.entries.map((x) => x.entry)),
+          // eslint-disable-next-line no-console
+          tap((nodes) => console.log('node:' + JSON.stringify(nodes))),
+          switchMap((nodes) => of(TemplatesActions.loadTemplatesSuccess({ templates: nodes }))),
           catchError((error) => {
             console.error('Error', error);
             return of(TemplatesActions.loadTemplatesFailure({ error }));
